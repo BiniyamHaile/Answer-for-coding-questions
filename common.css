@@ -1,0 +1,493 @@
+*{
+    box-sizing: border-box;
+    background-color:#c4c9e0; 
+    color: black;
+    font-family: montserrat;
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+.section-1 , .section-1__header ,  .section-1__header__first-head , .section-1__header__nav-container__nav-list{
+    background-color: #546c86;
+}
+
+
+
+
+
+.section-1{
+    padding-bottom: 5rem;
+    padding-top: 1.5rem;
+    box-shadow: 2px rgba(168, 159, 159, 0.9);
+    border-radius: 1.5rem;
+}
+
+
+
+
+.section-1__header__first-head__logo , .section-1__header__first-head__profile_container , .section-1__header__nav-container__nav-list{
+
+
+    background-color: rgba(0,0,0,0);
+
+
+
+}
+
+
+
+
+
+ .section-1__header__first-head__logo__h1 , .section-1__explain {
+    background-color: rgba(0,0,0,0);
+
+ }
+
+ .section-1__header__first-head__logo{
+   
+    background-color :#dbe1e8;
+ }
+
+
+
+
+
+
+
+.section-1__header__first-head__logo__h1{
+    font-family: montserrat;
+    text-shadow: 0 3px 15px #a38f8ffb; 
+    color: rgb(0, 0, 0);
+    font-size: larger;  
+    font-weight: bold;
+}
+
+
+
+.section-1__header__first-head__logo__h2{
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    font-weight: bolder;
+}
+.section-1__header__first-head {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 0 auto;
+    
+}
+.section-1__header__first-head__profile-container{
+    font-style: italic;
+    color: #000000;
+}
+
+.section-1__header__nav-container {
+    width : 100%;    
+    position: relative;
+   }
+
+
+
+   .section-1__header__nav-container__nav-list{
+    position: relative;
+   left : 0;
+   width: 100%;
+   display: flex;
+   justify-content: stretch;
+    
+   
+   }
+
+   
+
+.section-1__header__nav-container__nav-list__li{
+    display: inline-block;
+   
+    width : 12%;
+    background-color:  #dbe1e8;
+   
+    font-size: 1.4rem;
+    text-align: right;
+
+    position: relative;
+    margin-left: 0;
+    text-align: left;
+    padding : 5px;
+    
+    flex-grow: 1;
+
+}
+
+
+
+.section-1__header__nav-container__nav-list__li ,  .section-1__header__nav-container__nav-list__li__a-tag ,.section-1__header__nav-container__nav-list__active-btn {
+    background-color: #4e5057;
+    color: oldlace;
+    text-align: center;
+   
+}
+
+
+
+
+.section-1__header__nav-container__nav-list__li__a-tag{
+    
+    width : 100%;
+    background-color: #dbe1e8;
+    text-decoration: none;
+  
+}
+
+.section-1__header__nav-container__nav-list__li {
+    position: relative;
+    width: fit-content;
+    background-color:#c4c9e0;
+}
+
+.section-1__header__nav-container__nav-list__li__a-tag {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: cursive;
+    margin : 0 0 0 0;
+    width : 100%;
+    transition: all .3s ease-in-out;
+    background-color:#c4c9e0;
+    color: black;
+    
+
+      
+}
+
+
+.section-1__header__nav-container__nav-list__li__a-tag:hover{
+    background-color: rgb(170, 136, 136);
+    padding : 4px;
+    border : 1px solid white;
+}
+
+
+
+[class |= "logo"]{
+
+    display: inline;
+   /* color: #27AE60;*/
+   color: rgb(0, 0, 0);
+    font-style: italic;
+    width: fit-content;
+    border: 0.2px solid rgb(167, 152, 152);
+    float: left;
+    border-radius: 9px;
+
+}
+
+
+
+.section-1__header__nav-container__nav-list__sign-up{
+    white-space :nowrap;
+}
+
+
+.nav-container i{
+    display: none;
+}
+
+.section-1__header__nav-container__nav-list__li{
+    display: flex;
+}
+
+
+.section-1__header__nav-container__nav-list__li__active-btn .section-1__header__nav-container__nav-list__li__active-btn{
+    background-color: #4e5057;
+    color: oldlace;
+}
+
+
+
+
+
+
+
+
+
+
+.section-1__header__offCanvas{display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    width : 100%;
+    background-color:#101d2b; 
+    min-height: 350px;
+  
+   position: relative;
+   display: flex;
+   align-items: center;
+   
+}
+
+.footer__footer-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(214, 218, 240 , 0);
+}
+
+.footer__p{
+    width : 30%;
+    float: left;
+    margin-top: 5vh;
+    background-color:#101d2b; 
+    color: #d9e0e9;
+    font-family: montserrat;
+    margin-left: 15%; 
+    margin-right: 15%; 
+    
+
+    font-size: 1.5rem;
+
+}
+.footer__footer-contact__footer-span__a{
+    background-color: rgba(255, 255, 255, 0);
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-family: montserrat;
+    text-transform: none;
+    color: #d9e0e9;
+    font-style: italic;
+
+    
+
+}
+.footer__footer-contact__footer-span{
+   
+   left: 10%;
+   background-color:  rgba(214, 218, 240 , 0);
+}
+
+
+.footer__navigators__back-to-top {
+    background-color:  rgba(214, 218, 240 , 0);
+    position: absolute;
+    top : 80%;
+    color : #130d0d;
+    font-family: montserrat;
+    font-size: 1.2rem;
+    left : 5%;
+    width: fit-content;
+}
+
+.footer__navigators__year{
+    position: absolute;
+    left : 2%;
+    color: rgb(0, 0, 0);
+    top : 88%;
+    font-family: montserat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 900px){
+
+   
+    
+    
+    
+    .section-1__header__nav-container__nav-list{
+        position: relative;
+       left : 0;
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content :space-between;
+       
+       }
+    
+    
+    
+    
+    
+    
+    
+       .section-1__header__offCanvas {
+        display: block;
+       
+        background-color: lightgray;
+       padding : 5px 2px 5px 2px;
+        border-radius: 5px;
+        width  : fit-content;
+        position: fixed;
+        z-index: 5;
+        margin-bottom: 15px;
+        left : 1%;
+        top : 3vh;
+    }
+    
+    
+    .section-1__header__nav-container__nav-list__li__a-tag{
+        display: block;
+        width : 100%;
+    }
+    
+    
+    .section-1__header__nav-container {
+    
+        height:fit-content;
+        width : 0;
+        overflow-x: hidden;
+        position: fixed;
+        z-index: 3;
+        left : 0;
+        transition: width 0.4s ease-in-out;
+        background-color: #dbe1e8;
+        display: flex;
+        flex-direction: column;
+     
+        
+    
+    }
+    
+    .section-1__header__nav-container__nav-list{
+        background-color: rgba(240, 248, 255 , 0);
+        left : 0;
+    }
+    
+    .section-1__header__nav-container__nav-list__li  {
+        display: block;
+        width : 100%;
+    }
+    .section-1__header__nav-container{
+        display: block;
+    }
+    }
+    
+    
+    
+    
+    /* THE FOLLOWING CODE IS TO CREATE RESPONSIVE SITE FOR A DEVICE SCREEN BELOW 500px */
+    
+    
+    
+    
+    
+    @media only screen and (max-width : 500px){
+    
+    
+    
+        .section-1__header__offCanvas {
+        display: none;
+    }
+    
+    
+    .section-1__header__first-head__profile-container{
+            display: none;
+    
+        }
+        .section-1__header__first-head__logo{
+            display: flex;
+            flex-direction: column;
+            width : 100%;
+            justify-content: center;
+            align-items: center;
+    
+        }
+    
+        .section-1__header__nav-container  {
+            width : 100%;
+            margin-top: 20px;
+            display: block;
+            position: static;
+        }
+    
+        .section-1__header__nav-container__nav-list{
+            display: block;
+        }
+    
+        .section-1__header__nav-container__nav-list__li{
+            display: block;
+            width : 100%;
+        }
+    
+    
+    
+    
+    }
+    
+    
+
+
+
+
+
+
+.footer__footer-contact__footer-span , .footer__navigators__year{
+    display: flex;
+}
+
+
+  .footer__footer-contact__footer-span__img {
+       max-height: 1.8rem;
+       margin-right: 1rem;
+       border-radius : 50%;
+   }
+   
+
+
+
+   /* The following code is for the responsiveness of the footer */
+
+@media only screen and (max-width : 500px){
+    .footer-navigators{
+       display: block;
+        position: static;
+    }
+    .footer{
+        width : 100%;
+        display: flex;
+        flex-direction: column;
+    }    
+  
+
+}

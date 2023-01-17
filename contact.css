@@ -1,0 +1,317 @@
+.body-section{
+    position: relative;
+}
+
+.address{
+    position: absolute;
+    right : 5rem;
+    color: white;
+    font-size: 2rem;
+}
+.title{
+    font-size: 2.2rem;
+    font-style: italic;
+    font-family: montserrat;
+    color : rgb(0, 0, 0);
+    margin-left: 5rem;
+
+}
+
+.explanation{
+    font-family:montserrat;
+    color:rgb(0, 0, 0);
+    font-size: 1.7rem;
+    width : 60%;
+    margin-left: 4rem;
+}
+
+.body-contain{
+    width : 100%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.side {
+    margin-left : 6rem;
+    position : relative;
+    top : 80%;
+  
+}
+form {
+    width : 40%;
+    margin : 4rem auto 2rem auto;
+   
+    border-radius: 2rem;
+  /*  background-color: #2a2e35;*/
+    position: relative;
+   
+   
+}
+
+
+form label , input{
+    
+    color : rgb(0, 0, 0);
+    background-color: rgba(0,0,0,0);
+   
+    width : 35%;
+    
+
+}
+
+form input , #message{
+    padding : 0.7rem;
+    width: 35%;
+    
+    background-color: rgb(214, 168, 168);
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+form label{
+    font-family: cursive;
+    font-size: 1.4rem;
+    position: relative;
+    left :30%;
+    margin: 1.5rem 0 0.2rem 0;
+}
+#message{
+    height: 130px;
+}
+
+#labeler{
+    position: relative;
+    
+}
+
+.form-control{
+    position: relative;
+}
+
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+.form-control small {
+	color: #000000;
+    
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+    transform: translateX(-50%);
+  /*  visibility: hidden;*/
+   
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+
+
+.submit-btn{
+    padding : 0.8rem 1.2rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    background-color: darkgrey;
+    position: relative;
+    left : 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    font-family: monospace;
+    margin: auto;
+    
+}
+
+
+
+
+
+#offCanvas{display: none;}
+
+
+
+@media only screen and (max-width : 900px){
+.col-md-1 {width: 8.33%;}
+.col-md-2 {width: 16.66%;}
+.col-md-3 {width: 25%;}
+.col-md-4 {width: 33.33%;}
+.col-md-5 {width: 41.66%;}
+.col-md-6 {width: 50%;}
+.col-md-7 {width: 58.33%;}
+.col-md-8 {width: 66.66%;}
+.col-md-9 {width: 75%;}
+.col-md-10 {width: 83.33%;}
+.col-md-11 {width: 91.66%;}
+.col-md-12 {width: 100%;}
+
+
+
+
+
+
+
+
+.nav-container ul{
+    position: relative;
+   left : 0;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content :space-between;
+   
+   }
+
+
+
+
+
+
+
+#offCanvas{
+    display: block;
+   
+    background-color: lightgray;
+   padding : 5px 2px 5px 2px;
+    border-radius: 5px;
+    width  : fit-content;
+    position: fixed;
+    z-index: 5;
+    margin-bottom: 15px;
+    left : 1%;
+    top : 3vh;
+}
+
+
+#offCanvas li , a{
+    display: block;
+    width : 100%;
+}
+
+
+#offcanvas-div{
+
+    height:fit-content;
+    width : 0;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 3;
+    left : 0;
+    transition: width 0.4s ease-in-out;
+    background-color: #dbe1e8;
+    display: flex;
+    flex-direction: column;
+ 
+    
+
+}
+
+#offcanvas-div ul{
+    background-color: rgba(240, 248, 255 , 0);
+    left : 0;
+}
+
+#offcanvas-div li  {
+    display: block;
+    width : 100%;
+}
+
+#offcanvas-div i {
+    display: none;
+}
+
+
+.address{
+    position: relative;
+    display: block;
+    width: fit-content;
+    left : 8%;
+   
+}
+.explanation{
+    width : 84%;
+    left : 8%;
+}
+
+}
+
+
+
+
+/* THE FOLLOWING CODE IS TO CREATE RESPONSIVE SITE FOR A DEVICE SCREEN BELOW 500px */
+
+
+
+
+
+@media only screen and (max-width : 500px){
+
+body{
+    word-wrap: break-word;
+}
+
+#offCanvas{
+    display: none;
+}
+
+
+    .profile-container{
+        display: none;
+
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        width : 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #offcanvas-div{
+        width : 100%;
+        margin-top: 20px;
+        display: block;
+        position: static;
+    }
+
+    .nav-list{
+        display: block;
+    }
+
+    .nav-list li{
+        display: block;
+        width : 100%;
+    }
+.side{
+    max-width : 100%;
+    margin: auto auto 70px auto;
+    display: flex;
+
+    justify-content: center;
+    position: static;
+
+
+    
+}
+.body-contain{
+    display: block;
+}
+
+.form{
+    position: relative;
+    display: block;
+    border: 2px solid red;
+    overflow-y: hidden;
+}
+
+
+}
+
+
+

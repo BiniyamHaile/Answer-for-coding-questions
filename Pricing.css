@@ -1,0 +1,317 @@
+*{
+    box-sizing: border-box;
+}
+
+hgroup{
+    width : 100%;
+    display: flex;
+    justify-content: space-around;
+    color: rgba(236, 211, 236, 0.7);
+    font-size: 0.85rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.label{
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
+    margin-left: 3rem;
+    justify-content: right;
+    margin-left : 40%;
+    transform: translate(-50%);
+
+}
+#pricing-opt{
+    background-color: rgb(190, 170, 170);
+    padding : 4px;
+    border-radius: 5px;
+}
+
+.check-btn{
+   
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    background-color: darkgrey;
+    position: relative;
+  
+    font-size: 1.2rem;
+    font-family: monospace;
+    margin: auto;
+    
+}
+
+.price-container{
+    
+    width : 80%;
+   margin-top : 5vh;
+    display : grid;
+    column-gap: 2rem;
+    grid-template-columns: 27% 35% 27%;
+    align-items: center;
+    margin-left: 10%;
+}
+.price-container > div{
+    background-color: darkgray;
+   
+    padding : 2rem;
+    
+  
+}
+
+.price-container > div h1, .price-container > div p {
+    background-color: darkgray;
+   margin-left: 50%;
+   transform: translateX(-50%);
+}
+
+#family-price , #couples-price{
+    display: none;
+}
+
+#family-price , #couples-price , #individual-price{
+    transition: .3s all ease-in-out;
+}
+
+select{    margin-bottom: 10vh;
+    margin-top: 10vh;}
+
+select option{
+    background-color: aliceblue;
+    color: black;
+}
+
+.normal{
+    order: 1;
+    
+}
+.vip {
+    order : 3;
+   
+}
+.vvip{
+    order: 2;
+    height : 120%;
+    border-radius: 25%;
+   
+    
+}
+
+
+table{
+    width : 90%;
+    margin-left: 5%;
+    margin-top: 8vh;    
+    background-color: azure;
+}
+th, td {
+    font-family: montserrat;
+    padding: 15px;
+    text-align: left;
+    color : rgb(0, 0, 0);
+
+  }
+
+th{
+    font-size: 1.3rem;
+    font-family: monospace;
+}
+tr{
+    font-style: italic;
+}
+
+footer{
+    margin-top:10vh;
+}
+
+
+
+
+#offCanvas{display: none;}
+
+.table-container{
+    width:100%;
+    overflow: auto;
+}
+
+table{
+    min-width: 1200px;
+}
+
+@media only screen and (max-width : 900px){
+.col-md-1 {width: 8.33%;}
+.col-md-2 {width: 16.66%;}
+.col-md-3 {width: 25%;}
+.col-md-4 {width: 33.33%;}
+.col-md-5 {width: 41.66%;}
+.col-md-6 {width: 50%;}
+.col-md-7 {width: 58.33%;}
+.col-md-8 {width: 66.66%;}
+.col-md-9 {width: 75%;}
+.col-md-10 {width: 83.33%;}
+.col-md-11 {width: 91.66%;}
+.col-md-12 {width: 100%;}
+
+
+
+hgroup{
+    width : 100%;
+    display: grid;
+
+    grid-template-columns: repeat(2 , auto);
+}
+
+
+
+.label{
+    margin-left: 10%;
+}
+
+
+
+.nav-container ul{
+    position: relative;
+   left : 0;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content :space-between;
+   
+   }
+
+
+
+
+
+
+
+#offCanvas{
+    display: block;
+   
+    background-color: lightgray;
+   padding : 5px 2px 5px 2px;
+    border-radius: 5px;
+    width  : fit-content;
+    position: fixed;
+    z-index: 5;
+    margin-bottom: 15px;
+    left : 1%;
+    top : 3vh;
+}
+
+
+#offCanvas li , a{
+    display: block;
+    width : 100%;
+}
+
+
+#offcanvas-div{
+
+    height:fit-content;
+    width : 0;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 3;
+    left : 0;
+    transition: width 0.4s ease-in-out;
+    background-color: #dbe1e8;
+    display: flex;
+    flex-direction: column;
+ 
+    
+
+}
+
+#offcanvas-div ul{
+    background-color: rgba(240, 248, 255 , 0);
+    left : 0;
+}
+
+#offcanvas-div li  {
+    display: block;
+    width : 100%;
+}
+
+#offcanvas-div i {
+    display: none;
+}
+
+}
+
+
+
+
+/* THE FOLLOWING CODE IS TO CREATE RESPONSIVE SITE FOR A DEVICE SCREEN BELOW 500px */
+
+
+
+
+
+@media only screen and (max-width : 500px){
+
+
+
+
+    hgroup{
+        display: flex;
+        flex-direction: column;
+        width : fit-content;
+        margin: auto;
+    }
+
+    .price-container{
+        display: flex;
+        flex-direction: column;
+        width : 90%;
+       
+    }
+
+
+    .price-container > div{
+        margin-bottom: 10vh;
+        width: 70%;
+    }
+    .vvip{
+        min-height: 40vh;
+    }
+
+
+#offCanvas{
+    display: none;
+}
+
+
+    .profile-container{
+        display: none;
+
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        width : 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #offcanvas-div{
+        width : 100%;
+        margin-top: 20px;
+        display: block;
+        position: static;
+    }
+
+    .nav-list{
+        display: block;
+    }
+
+    .nav-list li{
+        display: block;
+        width : 100%;
+    }
+
+    
+
+
+
+
+}

@@ -1,0 +1,277 @@
+*::before , *::after{
+    box-sizing: border-box;
+}
+body {
+    color: white;
+    margin-left: 0;
+    overflow-x: hidden;
+}
+
+
+
+.article__title{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
+
+#header{
+    margin-bottom: 50px;
+}
+.side-nav {
+    position : fixed;
+    width : 15%;
+    color : rgb(245, 224, 224);
+    
+    }
+
+.side-nav__ul__li{
+    list-style-type: none;
+   
+}
+.side-nav__ul__li__a{
+    color: rgb(0, 0, 0);
+    display: block;
+    font-family:montserrat;
+    margin: 1.2rem;
+}
+
+.article{
+    width : 54%;
+    margin-left: 20%;
+}
+
+.article__p{
+   
+    font-size: 1.4rem;
+}
+
+.right-bar{
+    width : 20%;
+    position: fixed;
+   
+    margin-left: 79%;
+    top : 40vh;
+    border : 2px solid white;
+    display: flexbox;
+    flex-direction: column;
+    height : 30vh;
+    justify-content:space-around;
+}
+
+
+#reviews{
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, auto );
+}
+
+#reviews > div{
+    padding : 20px;
+}
+
+
+
+
+
+
+.side-nav__ul__li__a{
+    text-decoration: none;
+    font-style: monospace;
+}
+
+
+#offCanvas{display: none;}
+
+
+
+@media only screen and (max-width : 900px){
+.col-md-1 {width: 8.33%;}
+.col-md-2 {width: 16.66%;}
+.col-md-3 {width: 25%;}
+.col-md-4 {width: 33.33%;}
+.col-md-5 {width: 41.66%;}
+.col-md-6 {width: 50%;}
+.col-md-7 {width: 58.33%;}
+.col-md-8 {width: 66.66%;}
+.col-md-9 {width: 75%;}
+.col-md-10 {width: 83.33%;}
+.col-md-11 {width: 91.66%;}
+.col-md-12 {width: 100%;}
+
+
+
+
+.right-bar{
+    position: static;
+    display: block;
+}
+
+
+
+.nav-container ul{
+    position: relative;
+   left : 0;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content :space-between;
+   
+   }
+
+
+
+
+
+
+
+#offCanvas{
+    display: block;
+   
+    background-color: lightgray;
+   padding : 5px 2px 5px 2px;
+    border-radius: 5px;
+    width  : fit-content;
+    position: fixed;
+    z-index: 5;
+    margin-bottom: 15px;
+    left : 1%;
+    top : 3vh;
+}
+
+
+#offCanvas li , a{
+    display: block;
+    width : 100%;
+}
+
+
+#offcanvas-div{
+
+    height:fit-content;
+    width : 0;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 3;
+    left : 0;
+    transition: width 0.4s ease-in-out;
+    background-color: #dbe1e8;
+    display: flex;
+    flex-direction: column;
+ 
+    
+
+}
+
+#offcanvas-div ul{
+    background-color: rgba(240, 248, 255 , 0);
+    left : 0;
+}
+
+#offcanvas-div li  {
+    display: block;
+    width : 100%;
+}
+
+#offcanvas-div i {
+    display: none;
+}
+
+
+
+
+}
+
+
+
+
+/* THE FOLLOWING CODE IS TO CREATE RESPONSIVE SITE FOR A DEVICE SCREEN BELOW 500px */
+
+
+
+
+
+@media only screen and (max-width : 500px){
+
+body{
+    word-wrap: break-word;
+}
+
+
+.right-bar{
+    position: static;
+    display: block;
+    width : 80%;
+    margin : auto;
+}
+
+.side-nav{
+    position: static;
+    width : 100%;
+   
+}
+
+.article{
+    width : 90%;
+    word-wrap: break-word;
+    margin : auto;
+
+}
+
+#offCanvas{
+    display: none;
+}
+
+
+    .profile-container{
+        display: none;
+
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        width : 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #offcanvas-div{
+        width : 100%;
+        margin-top: 20px;
+        display: block;
+        position: static;
+    }
+
+    .nav-list{
+        display: block;
+    }
+
+    .nav-list li{
+        display: block;
+        width : 100%;
+    }
+
+
+.transcript{
+    width : 80%;
+    overflow-y: scroll;
+    margin-left: 10%;
+}
+
+.right-bar__h1 , .right-bar__audio{
+    
+    margin: auto;
+    width: 70%;
+}
+
+.right-bar__h1{
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+
+}
+
+
+

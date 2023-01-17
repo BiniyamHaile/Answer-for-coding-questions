@@ -1,0 +1,368 @@
+*::before , *::after{
+    box-sizing: border-box;
+}
+
+body {
+    width : 100%;
+    overflow-x: hidden;
+}
+
+
+.section-1 , .section-1__header ,  .section-1__header__first-head , .section-1__header__nav-container__nav-list{
+    background-color: #546c86;
+}
+
+
+
+
+
+.section-1{
+    padding-bottom: 5rem;
+    padding-top: 1.5rem;
+    box-shadow: 2px rgba(168, 159, 159, 0.9);
+    border-radius: 1.5rem;
+}
+
+
+
+
+.section-1__header__first-head__logo , .section-1__header__first-head__profile_container , .section-1__header__nav-container__nav-list{
+
+
+    background-color: rgba(0,0,0,0);
+
+
+
+}
+
+
+
+
+
+ .section-1__header__first-head_logo_h1 , .section-1__explain {
+    background-color: rgba(0,0,0,0);
+
+ }
+
+
+.section-1__explain{
+
+    font-size: 1.5rem;
+    font-style: italic;
+    font-family: monteserrat;
+    margin : 3rem 5rem auto 5rem;
+    color: white;
+}
+
+
+/* the above code should be copied to the homepage part */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form {
+    width : 60%;
+    margin : 4rem auto 2rem auto;
+   
+    border-radius: 2rem;
+   /* background-color: #32383f;*/
+    position: relative;
+   
+
+
+}
+
+.form label , input{
+    
+    color : rgb(0, 0, 0);
+    background-color: rgba(0,0,0,0);
+    display: inline;
+    width : fit-content;
+    font-family: montserrat;
+
+}
+
+.form input{
+    padding : 0.4rem;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+
+}
+input[type = "text"] , input[type =  "password"] , input[type = "email" ] , input[type = "tel"]{
+    font-size: 1.2rem;
+}
+.form input:hover{
+    background-color: rgb(147, 126, 221);
+}
+
+.form  button{
+    margin : auto;
+}
+
+.form label{
+    font-family: cursive;
+    font-size: 1.4rem;
+    position: relative;
+    left :30%;
+    margin: 1.5rem 0 0.2rem 0;
+}
+
+.submit-btn{
+    padding : 0.8rem 1.2rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    background-color: darkgrey;
+    position: relative;
+    left : 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    font-family: monospace;
+    margin: auto;
+    
+}
+
+.submit-btn:hover{
+    background-color: rgb(111, 214, 42);
+}
+
+.form-paragraph{
+    margin-left : 30%;
+    
+    font-family: cursive;
+    font-style: italic;
+    color : rgb(0, 0, 0);
+    width : 100%;
+}
+.form-toggler{
+    font-style: italic;
+    font-family: cursive;
+    background-color: darkgrey;
+    padding : 0.3rem;
+    border-radius: 0.3rem;
+}
+
+.form-toggler:hover{
+    background-color: rgb(111, 214, 42);
+}
+
+#log-in , #login-paragraph{
+    /*display: none;*/
+}
+
+
+
+
+.form-control{
+    position: relative;
+    width : fit-content;
+    margin: auto;
+    padding : 1.7rem;
+  
+}
+
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+.form-control small {
+	color: #000000;
+	position: relative;
+
+    display: inline-block;
+	left: 50%;
+    transform: translateX(-50%); 
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+
+
+
+#offCanvas{display: none;}
+
+
+
+@media only screen and (max-width : 900px){
+.col-md-1 {width: 8.33%;}
+.col-md-2 {width: 16.66%;}
+.col-md-3 {width: 25%;}
+.col-md-4 {width: 33.33%;}
+.col-md-5 {width: 41.66%;}
+.col-md-6 {width: 50%;}
+.col-md-7 {width: 58.33%;}
+.col-md-8 {width: 66.66%;}
+.col-md-9 {width: 75%;}
+.col-md-10 {width: 83.33%;}
+.col-md-11 {width: 91.66%;}
+.col-md-12 {width: 100%;}
+
+
+
+
+
+
+
+.nav-container ul{
+    position: relative;
+   left : 0;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content :space-between;
+   
+   }
+
+
+
+
+
+
+
+#offCanvas{
+    display: block;
+   
+    background-color: lightgray;
+   padding : 5px 2px 5px 2px;
+    border-radius: 5px;
+    width  : fit-content;
+    position: fixed;
+    z-index: 5;
+    margin-bottom: 15px;
+    left : 1%;
+    top : 3vh;
+}
+
+
+#offCanvas li , a{
+    display: block;
+    width : 100%;
+}
+
+
+#offcanvas-div{
+
+    height:fit-content;
+    width : 0;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 3;
+    left : 0;
+    transition: width 0.4s ease-in-out;
+    background-color: #dbe1e8;
+    display: flex;
+    flex-direction: column;
+ 
+    
+
+}
+
+#offcanvas-div ul{
+    background-color: rgba(240, 248, 255 , 0);
+    left : 0;
+}
+
+#offcanvas-div li  {
+    display: block;
+    width : 100%;
+}
+
+#offcanvas-div i {
+    display: none;
+}
+
+}
+
+
+
+
+/* THE FOLLOWING CODE IS TO CREATE RESPONSIVE SITE FOR A DEVICE SCREEN BELOW 500px */
+
+
+
+
+
+@media only screen and (max-width : 500px){
+
+    .form {
+        min-width : 90%
+    }
+    .form label{
+        left : 10%;
+    }
+.form-paragraph{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#offCanvas{
+    display: none;
+}
+
+
+    .profile-container{
+        display: none;
+
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        width : 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #offcanvas-div{
+        width : 100%;
+        margin-top: 20px;
+        display: block;
+        position: static;
+        margin-left: 0;
+        z-index: 100;
+    }
+
+    .nav-list{
+        display: block;
+    
+        padding: 0;
+
+    }
+
+    .nav-list li{
+        display: block;
+        width : 100%;
+        
+        list-style-type: none;
+        position: relative;
+        
+    }
+
+
+
+
+}

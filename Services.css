@@ -1,0 +1,380 @@
+/* common css */
+
+
+/* common css ends here*/
+
+
+.body-container{
+    width : 85%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 10%;
+    margin : 5vh auto  10px auto;
+    padding : 5rem;
+    align-items: center;
+
+    
+    }
+.body-container__paragraph{
+    color: #000000;
+    font-size: 2rem;
+    font-family: cursive;
+    margin-left: 5%;
+}
+
+
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    width: 70%;
+    
+    margin-left: 15%;
+}
+
+
+.btn-container__tablebtn:hover{
+    background-color: rgba(47, 46, 61, 0.993);
+}
+
+
+
+.toggled-container{
+    display: flex;
+    flex-direction: column;
+    width : 70%;
+    margin-left: 15%;
+    min-height: 40vh;
+    padding: 1.6rem;
+    font-size: xx-large;
+
+}
+
+
+
+.btn-container__tablebtn{
+    flex-grow: 1;
+    min-width : 10%;
+    white-space: nowrap;
+    padding : 8px;
+    background-color: rgb(163, 182, 206);
+    border : 0.1px solid rgb(114, 109, 109);
+    border-radius: 0.5rem;
+    margin-top: 4vh;
+    margin-bottom: 2.5vh;
+}
+
+.btn-container__active-btn{
+    background-color: #f8f8f8;
+}
+
+.btn-container__tablebtn:hover{
+    cursor: pointer;
+    background-color: rgba(47, 46, 61, 0.993);
+}
+.toggled-container__toggled-div {
+  /*  width : 30%;*/
+   border: 2.5px solid rgb(126, 120, 120);
+   border-radius: 5px;
+    }
+
+.toggled-container__travel-list{
+    display: grid;
+    grid-template-columns: repeat(3 , 50px);
+    column-gap: 5%;
+    
+}
+
+
+.toggled-container__toggled-div {
+    padding: 20px;
+   display: none;  
+  
+}
+.toggled-container__active{
+    display: block;
+}
+
+.toggled-container__hotel-div__list{
+    color: #FFF;
+}
+.toggled-container__toggled-div{
+  /*  margin-left: 30%;*/
+    margin-bottom: 5vh;
+    color : #27AE60;
+    
+
+}
+
+
+.toggled-container__travel-list{
+
+    display: grid;
+    grid-template-columns: repeat(3 , auto);
+
+}
+
+
+.toggled-container__travel-div{
+    align-items: center;
+}
+/* the following code is 
+   for the footer part*/
+
+
+
+
+   /*
+.footer{
+    width : 100%;
+    background-color:rgba(214, 218, 240 , 0.4); 
+  
+   position: relative;
+   
+}
+
+.footer p{
+    width : 30%;
+    float: left;
+    margin-top: 5vh;
+    background-color: rgba(214, 218, 240 , 0);
+    margin-left: 15%; 
+    margin-right: 15%; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+
+}
+.footer-span a{
+    background-color: rgba(255, 255, 255, 0);
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    text-transform: none;
+    color: #d9e0e9;
+    
+
+}
+.footer-span {
+   margin-left: 10%;
+}
+
+
+.back-to-top {
+    background-color:  rgba(214, 218, 240 , 0);
+    position: absolute;
+    top : 80%;
+    color : #e6ecf8;
+    font-size: 1.2rem;
+    left : 5%;
+}
+
+.year{
+    position: absolute;
+    left : 2%;
+    color: white;
+    top : 88%;
+}
+*/
+
+
+
+.toggled-container__visa-div , .toggled-container__hotel-div{
+    color: white;
+    background-color: #4e5057;
+    padding : 1.2rem;
+    font-size: 1.5rem;
+   /* display: none;*/
+}
+
+
+.toggled-container__hotel-div__list__item{
+    margin-left: 50%;
+    
+    transform: translateX(-50%);
+}
+
+.toggled-container__hotel-div__list , .toggled-container__hotel-div__list__item {
+    background-color: #4e5057;
+    margin-top: 5px;
+}
+
+
+.toggled-container__travel-div__h1{
+    text-align: center;
+}
+
+
+#offCanvas{display: none;}
+
+
+
+@media only screen and (max-width : 900px){
+.col-md-1 {width: 8.33%;}
+.col-md-2 {width: 16.66%;}
+.col-md-3 {width: 25%;}
+.col-md-4 {width: 33.33%;}
+.col-md-5 {width: 41.66%;}
+.col-md-6 {width: 50%;}
+.col-md-7 {width: 58.33%;}
+.col-md-8 {width: 66.66%;}
+.col-md-9 {width: 75%;}
+.col-md-10 {width: 83.33%;}
+.col-md-11 {width: 91.66%;}
+.col-md-12 {width: 100%;}
+
+
+body{
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+.body-container{
+    grid-template-columns: 60% 35%;
+
+}
+
+
+.nav-container ul{
+    position: relative;
+   left : 0;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content :space-between;
+   
+   }
+
+
+
+
+
+
+
+#offCanvas{
+    display: block;
+   
+    background-color: lightgray;
+   padding : 5px 2px 5px 2px;
+    border-radius: 5px;
+    width  : fit-content;
+    position: fixed;
+    z-index: 5;
+    margin-bottom: 15px;
+    left : 1%;
+    top : 3vh;
+}
+
+
+#offCanvas li , a{
+    display: block;
+    width : 100%;
+}
+
+
+#offcanvas-div{
+
+    height:fit-content;
+    width : 0;
+    overflow-x: hidden;
+    position: fixed;
+    z-index: 3;
+    left : 0;
+    transition: width 0.4s ease-in-out;
+    background-color: #dbe1e8;
+    display: flex;
+    flex-direction: column;
+ 
+    
+
+}
+
+#offcanvas-div ul{
+    background-color: rgba(240, 248, 255 , 0);
+    left : 0;
+}
+
+#offcanvas-div li  {
+    display: block;
+    width : 100%;
+}
+
+#offcanvas-div i {
+    display: none;
+}
+
+}
+
+
+
+
+/* THE FOLLOWING CODE IS TO CREATE RESPONSIVE SITE FOR A DEVICE SCREEN BELOW 500px */
+
+
+
+
+
+@media only screen and (max-width : 500px){
+
+
+
+    .body-container{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+
+    .btn-container{
+        display: none;
+    }
+
+    #travel-div,  #visa-div , #hotel-div {
+        display: block;
+    }
+
+
+
+#offCanvas{
+    display: none;
+}
+
+
+    .profile-container{
+        display: none;
+
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        width : 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #offcanvas-div{
+        width : 100%;
+        margin-top: 20px;
+        display: block;
+        position: static;
+    }
+
+    .nav-list{
+        display: block;
+    }
+
+    .nav-list li{
+        display: block;
+        width : 100%;
+    }
+
+
+
+
+}
+
+
+
